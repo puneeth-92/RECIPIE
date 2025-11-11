@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Recipe App</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo"><b>RECIPIE</b></div>
+            <div class="nav-options">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/recipes">All Recipes</a></li>
+                    <li><a href="/recipes/new">Add Recipe</a></li>
+                    <li><a href="#">My Recipes</a></li>
+                    <li><a href="/login"><button class="btn nav-btn">Login/Register</button></a></li>
+                </ul>
+            </div>
+        </div>
+  </header>
+  <main>
+    <div class="login-container">
+    <h1>Welcome Back</h1>
+    <p class="subtitle">Please log in to continue</p>
+
+    <form action="/login" method="POST" class="login-form">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+
+      <button type="submit" class="sub-btn">Login</button>
+    </form>
+
+    <p class="register-text">
+      Don't have an account? <a href="#">Register here</a>
+    </p>
+  </div>
+  </main>
+  
+</body>
+</html>

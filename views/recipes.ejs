@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECIPIE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/recipes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo"><b>RECIPIE</b></div>
+            <div class="nav-options">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/recipes">All Recipes</a></li>
+                    <li><a href="/recipes/new">Add Recipe</a></li>
+                    <li><a href="/myrecipes">My Recipes</a></li>
+                    <li><a href="/login"><button class="btn nav-btn">Login/Register</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+  <div class="recipes-grid">
+    <% for(let i = 0; i < allRecipes.length; i++) { %>
+      <div class="recipe-card">
+        <img src="<%= allRecipes[i].image.url %>" alt="<%= allRecipes[i].title %>">
+        <div class="recipe-content">
+          <h3 class="recipe-title"><%= allRecipes[i].title %></h3>
+          <p class="recipe-desc">Category: <%= allRecipes[i].category %></p>
+          <a href="/recipes/<%= allRecipes[i]._id %>" class="view-btn">View Recipe</a>
+        </div>
+      </div>
+    <% } %>
+  </div>        
+    </main>
+</body>
+</html>

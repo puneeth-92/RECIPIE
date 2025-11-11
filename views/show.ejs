@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= recipe.title %> | Recipe Details</title>
+  <link rel="stylesheet" href="/css/show.css">
+</head>
+<body>
+  <header>
+        <div class="nav-bar">
+            <div class="logo"><b>RECIPIE</b></div>
+            <div class="nav-options">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/recipes">All Recipes</a></li>
+                    <li><a href="/recipes/new">Add Recipe</a></li>
+                    <li><a href="#">My Recipes</a></li>
+                    <li><a href="/login"><button class="btn nav-btn">Login/Register</button></a></li>
+                </ul>
+            </div>
+        </div>
+  </header>
+  <main>
+    <div class="container">
+    <img src="<%= recipe.image.url %>" alt="<%= recipe.title %>" class="recipe-image">
+
+    <div class="content">
+      <h1><%= recipe.title %></h1><hr>
+      <h1><%= recipe.description %></h1><hr><br>
+      <div class="category"><%= recipe.category %></div>
+
+      <div class="info">
+        <span>Type: <%= recipe.type %></span>
+        <span>Prep Time: <%= recipe.prepTime %> mins</span>
+        <span>Servings: <%= recipe.servings %></span>
+      </div>
+
+      <div class="section">
+        <h3>Ingredients</h3>
+        <ul>
+          <% for(let i=0; i<recipe.ingredients.length; i++) { %>
+            <li><%= recipe.ingredients[i] %></li>
+          <% } %>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Instructions</h3>
+        <ol>
+          <% for(let i=0; i<recipe.instructions.length; i++) { %>
+            <li><%= recipe.instructions[i] %></li>
+          <% } %>
+        </ol>
+      </div>
+
+      <div class="bottom">
+        <a href="/recipes" class="back-btn">Back to Recipes</a>
+      </div>
+    </div>
+  </div>
+  </main>
+  
+</body>
+</html>
