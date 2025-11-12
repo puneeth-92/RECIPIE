@@ -4,7 +4,7 @@ const Schema=mongoose.Schema;
 
 main()
 .then((res)=>{
-    console.log("DataBase connection is Scuccessfull");
+    console.log("DataBase connection is Successfull");
 }).catch((err)=>{console.log(err)});
 
 async function main(){

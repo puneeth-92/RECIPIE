@@ -19,6 +19,48 @@ const sampleRecipes = [
     },
   },
   {
+    title: "Fruit Salad",
+    description: "Colorful mix of fresh fruits topped with honey and cream.",
+    category: "Dessert",
+    ingredients: ["Banana", "Apple", "Pineapple", "Honey", "Cream"],
+    instructions: [
+      "Chop fruits, mix with cream, drizzle honey."
+    ],
+    prepTime: 10,
+    servings: 2,
+    image: {
+      url: "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJ1aXQlMjBzYWxhZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=900"
+    },
+  },
+  {
+    title: "Samosa",
+    description: "Crispy fried pastry filled with spicy potatoes and peas.",
+    category: "Snack",
+    ingredients: ["Flour", "Potatoes", "Peas", "Oil"],
+    instructions: [
+      "Make filling, wrap in dough, and deep fry."
+    ],
+    prepTime: 40,
+    servings: 4,
+    image: {
+      url: "https://images.unsplash.com/photo-1732519970445-8f2d6998961f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2Ftb3NhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=900"
+    },
+  },
+  {
+    title: "Curd Rice",
+    description: "Comforting South Indian dish made from rice and yogurt.",
+    category: "Lunch",
+    ingredients: ["Cooked rice", "Curd", "Mustard seeds", "Curry leaves"],
+    instructions: [
+      "Mix rice and curd, temper with mustard seeds and curry leaves."
+    ],
+    prepTime: 15,
+    servings: 2,
+    image: {
+      url: "https://images.unsplash.com/photo-1633383718081-22ac93e3db65?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3VyZCUyMHJpY2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=900"
+    },
+  },
+  {
     title: "Butter Chicken",
     description: "Rich and creamy tomato-based curry with tender chicken pieces.",
     category: "Dinner",
@@ -249,48 +291,6 @@ const sampleRecipes = [
     servings: 2,
     image: {
       url: "https://images.unsplash.com/photo-1712757248842-04f6e3844374?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGluZGlhbiUyMHJvdGklMjBhbmQlMjBjdXJyeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=900"
-    },
-  },
-  {
-    title: "Fruit Salad",
-    description: "Colorful mix of fresh fruits topped with honey and cream.",
-    category: "Dessert",
-    ingredients: ["Banana", "Apple", "Pineapple", "Honey", "Cream"],
-    instructions: [
-      "Chop fruits, mix with cream, drizzle honey."
-    ],
-    prepTime: 10,
-    servings: 2,
-    image: {
-      url: "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJ1aXQlMjBzYWxhZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=900"
-    },
-  },
-  {
-    title: "Samosa",
-    description: "Crispy fried pastry filled with spicy potatoes and peas.",
-    category: "Snack",
-    ingredients: ["Flour", "Potatoes", "Peas", "Oil"],
-    instructions: [
-      "Make filling, wrap in dough, and deep fry."
-    ],
-    prepTime: 40,
-    servings: 4,
-    image: {
-      url: "https://images.unsplash.com/photo-1732519970445-8f2d6998961f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2Ftb3NhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=900"
-    },
-  },
-  {
-    title: "Curd Rice",
-    description: "Comforting South Indian dish made from rice and yogurt.",
-    category: "Lunch",
-    ingredients: ["Cooked rice", "Curd", "Mustard seeds", "Curry leaves"],
-    instructions: [
-      "Mix rice and curd, temper with mustard seeds and curry leaves."
-    ],
-    prepTime: 15,
-    servings: 2,
-    image: {
-      url: "https://images.unsplash.com/photo-1633383718081-22ac93e3db65?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3VyZCUyMHJpY2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=900"
     },
   },
   {

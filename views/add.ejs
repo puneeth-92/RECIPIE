@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Add New Recipe</title>
   <link rel="stylesheet" href="/css/add.css">
+  <link rel="stylesheet" href="/css/navbar.css">
 </head>
 <body>
       <header>
@@ -24,22 +25,26 @@
     <div class="form-container">
     <h1>Add a New Recipe</h1>
     <form action="/recipes" method="POST">
-      <div class="form-group">
-        <label for="description">Recipe Name</label>
-        <input type="text" id="description" name="recipe[description]" placeholder="e.g. Masala Dosa" required>
-      </div>
+        <div class="form-group">
+            <label for="title">Recipe Title</label>
+            <input type="text" id="title" name="recipe[title]" placeholder="e.g. Masala Dosa" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Recipe Description</label>
+            <input type="text" id="description" name="recipe[description]" placeholder="e.g. thin and crispy crunch " required>
+        </div>
 
-      <div class="form-group">
-        <label for="category">Category</label>
-        <select id="category" name="recipe[category]" required>
-          <option value="">Select category</option>
-          <option value="Breakfast">Breakfast</option>
-          <option value="Lunch">Lunch</option>
-          <option value="Dinner">Dinner</option>
-          <option value="Snack">Snack</option>
-          <option value="Dessert">Dessert</option>
-        </select>
-      </div>
+        <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category" name="recipe[category]" required>
+            <option value="">Select category</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Snack">Snack</option>
+            <option value="Dessert">Dessert</option>
+            </select>
+        </div>
 
       <div class="form-group">
         <label for="ingredients">Ingredients</label>

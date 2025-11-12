@@ -19,5 +19,3 @@ const initDB= async()=>{
 };
 
 initDB();
-
-

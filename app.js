@@ -9,7 +9,7 @@ const mongoose=require("mongoose");
 const mongo_url='mongodb://127.0.0.1:27017/Recipie';
 main()
 .then((res)=>{
-    console.log("DataBase connection is Scuccessfull");
+    console.log("DataBase connection is Successfull");
 }).catch((err)=>{console.log(err)});
 
 async function main(){
@@ -35,14 +35,12 @@ app.get("/recipes/new", (req, res) => {
 });
 
 app.post("/recipes", async (req, res) => {
-  const data = req.body.recipe;
-
-  data.ingredients = data.ingredients.split("\n").map(line => line.trim()).filter(line => line);
-  data.instructions = data.instructions.split("\n").map(line => line.trim()).filter(line => line);
-
-  const newRecipe = new Recipe(data);
-  await newRecipe.save();
-  res.redirect("/recipes");
+    const data = req.body.recipe;
+    data.ingredients = data.ingredients.split("\n").map(line => line.trim()).filter(line => line);
+    data.instructions = data.instructions.split("\n").map(line => line.trim()).filter(line => line);
+    const newRecipe = new Recipe(data);
+    await newRecipe.save();
+    res.redirect("/recipes");
 });
 
 app.get("/recipes/:id", async (req, res) => {
@@ -56,6 +54,14 @@ app.get("/recipes/:id", async (req, res) => {
 
 app.get("/login",(req,res)=>{
     res.render("login.ejs");
+});
+
+app.get("/myrecipes",(req,res)=>{
+    res.send("In progress");
+});
+
+app.post("/login",(req,res)=>{
+    res.redirect("/");
 });
 
 app.listen(port,()=>{
